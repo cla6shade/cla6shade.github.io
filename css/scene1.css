@@ -54,11 +54,12 @@
     background-image: url("../images/profile.jpg");
 }
 
-#title-button.material-symbols-outlined {
+#title-button {
     margin: 0 auto;
-    font-size: 45px;
-    font-weight: bold;
-    color: #2f2f2f;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/arrow_icon.svg");
+    background-size: cover;
 
     animation-delay: 1.3s;
     animation-duration: 2s;
@@ -70,13 +71,13 @@
 
 @keyframes title-button-bounce {
     0% {
-        left: 0;
+        transform: translate(0, 0);
     }
     50% {
-        left: 20px;
+        transform: translate(20px, 0);
     }
     100% {
-        left: 0;
+        transform: translate(0, 0);
     }
 }
 
@@ -130,24 +131,24 @@
 @keyframes title-fadeIn {
     from {
         opacity: 0;
-        left: -10px;
+        transform: translate(-10px, 0);
     }
     to {
         opacity: 1;
-        left: 0;
+        transform: translate(0, 0);
     }
 }
 
 
 @keyframes fadeIn {
     0% {
-        right: -500px;
+        transform: translate(500px, 0);
         opacity: 0.2;
     }
     50% {
         opacity: 0.3;
     }
     100% {
-        right: 0;
+        transform: translate(0, 0);
     }
 }

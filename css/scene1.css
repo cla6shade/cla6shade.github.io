@@ -88,8 +88,29 @@
     flex-direction: column;
 }
 
-.title-container {
+.left-container {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.github-badge-container {
+    height: 75px;
+    width: 75px;
+    position: fixed;
+}
+
+#github-badge {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 12px auto 12px auto;
+    background-size: cover;
+    background-image: url("../images/github_badge.svg");
+}
+
+.title-container {
+    flex-grow: 10;
     display: flex;
     justify-content: center;
     flex-direction: column;

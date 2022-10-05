@@ -1,0 +1,153 @@
+#scene-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#scene-1-left {
+    flex-grow: 5;
+    display: flex;
+    overflow: hidden;
+}
+
+#scene-1-right {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+    background-image: url("../images/right.svg");
+    background-size: cover;
+    position: relative;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+}
+
+.right-profile-container {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.right-button-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profile-image {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    border-color: #F72674;
+    border-style: solid;
+    border-width: 10px;
+    background-size: cover;
+    background-image: url("../images/profile.jpg");
+}
+
+#title-button.material-symbols-outlined {
+    margin: 0 auto;
+    font-size: 45px;
+    font-weight: bold;
+    color: #2f2f2f;
+
+    animation-delay: 1.3s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-name: title-button-bounce;
+    animation-iteration-count: infinite;
+    position: relative
+}
+
+@keyframes title-button-bounce {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 20px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+#scene-1-left > .container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#title-text {
+    margin-left: 25%;
+    font-family: "Gmarket Sans", serif;
+    font-size: 120px;
+    color: #2f2f2f;
+    position: relative;
+    opacity: 0;
+
+    animation-name: title-fadeIn;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+#subtitle-text {
+    margin-left: 25.5%;
+    font-family: "Gmarket Sans", serif;
+    font-size: 50px;
+    color: #797979;
+    position: relative;
+    opacity: 0;
+
+    animation-name: title-fadeIn;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes title-fadeIn {
+    from {
+        opacity: 0;
+        left: -10px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        right: -500px;
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        right: 0;
+    }
+}

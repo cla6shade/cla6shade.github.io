@@ -1,0 +1,68 @@
+#scene-2-right h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+#scene-2-right .title-container {
+    height: 80px;
+    flex-grow: 0;
+}
+
+.title-divider {
+    width: 200px;
+    background-color: #F72674;
+    border-color: #F72674;
+    height: 4px;
+    margin: 15px auto 30px 0;
+}
+
+#affiliation {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#scene-2-right .information {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.information p, .information a {
+    font-family: "Gmarket Sans Light", serif;
+    font-size: 25px;
+    color: #fff;
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+#skills {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#awards {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.slide-in {
+    animation: change 0.5s ease forwards;
+}
+
+@keyframes change {
+    from {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}

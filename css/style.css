@@ -1,23 +1,33 @@
 @import url("scene1.css");
 @import url("scene2.css");
+
 @font-face {
     font-family: "Gmarket Sans";
     src: url("../fonts/GmarketSansTTFBold.ttf") format("truetype");
     font-weight: bold;
 }
+
 @font-face {
     font-family: "Gmarket Sans Light";
     src: url("../fonts/GmarketSansTTFLight.ttf") format("truetype");
     font-weight: normal;
 }
+
 @font-face {
     font-family: "Gmarket Sans Med";
     src: url("../fonts/GmarketSansTTFMedium.ttf") format("truetype");
     font-weight: normal;
 }
-body, h1, h2, p{
+
+body, h1, h2, p {
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
 #root {
     width: 100vw;
     height: 100vh;
@@ -25,15 +35,18 @@ body, h1, h2, p{
     transform: translateZ(0);
     will-change: contents;
 }
+
 .container {
     width: 100%;
     height: 100%;
 }
+
 .scene {
     width: 100%;
     height: 100%;
     display: flex;
 }
+
 .title-text {
     font-family: "Gmarket Sans", serif;
     font-size: 120px;
@@ -45,6 +58,7 @@ body, h1, h2, p{
     font-size: 50px;
     color: #797979;
 }
+
 p {
     font-family: 'Gmarket Sans', serif;
     font-size: 20px;
@@ -62,4 +76,10 @@ p {
     border-width: 10px;
     background-size: cover;
     background-image: url("../images/profile.jpg");
+}
+
+.github-badge-container {
+    height: 75px;
+    width: 75px;
+    position: fixed;
 }

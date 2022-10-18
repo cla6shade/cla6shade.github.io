@@ -1,5 +1,5 @@
 #scene-1 {
-    display: none;
+    display: flex;
 }
 
 #scene-1-left {
@@ -37,33 +37,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#title-button {
-    margin: 0 auto;
-    width: 40px;
-    height: 40px;
-    background-image: url("../images/arrow_icon.svg");
-    background-size: cover;
-
-    animation-delay: 1.3s;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    animation-name: title-button-bounce;
-    animation-iteration-count: infinite;
-    position: relative
-}
-
-@keyframes title-button-bounce {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(20px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
 }
 
 #scene-1-left > .container {

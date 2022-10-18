@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>cla6shade</title>
+    <script src="js/scene2.js"></script>
 </head>
 <body>
 <div id="root">
@@ -29,7 +30,7 @@
                     <div class="profile-image"></div>
                 </div>
                 <div class="right-button-container">
-                    <span class="material-symbols-outlined" id="title-button">
+                    <span class="material-symbols-outlined right-button" id="title-button">
                     </span>
                 </div>
             </div>
@@ -40,21 +41,20 @@
                     <h1 class="title-text" id="scene-2-title-text">Info</h1>
                     <div class="profile-image"></div>
                     <div class="container">
-                        <a href="#affiliation">Basic Info</a>
+                        <a href="#" id="btn_affiliation">Basic Info</a>
                     </div>
                     <div class="container">
-                        <a href="#skills">Skills</a>
+                        <a href="#" id="btn_skills">Skills</a>
                     </div>
                     <div class="container">
-                        <a href="#awards">Awards</a>
+                        <a href="#" id="btn_awards">Awards</a>
                     </div>
                 </div>
             </div>
             <div id="scene-2-right">
                 <div class="info-container">
                     <div class="info-content">
-
-                        <div id="affiliation">
+                        <div class="transcene" id="affiliation">
                             <div class="title-container">
                                 <h1>Basic Info</h1>
                             </div>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <div id="skills">
+                        <div class="transcene" id="skills">
                             <div class="title-container">
                                 <h1>Skills</h1>
                             </div>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
 
-                        <div id="awards">
+                        <div class="transcene" id="awards">
                             <div class="title-container">
                                 <h1>Awards</h1>
                             </div>
@@ -116,6 +116,9 @@
                             </div>
 
                         </div>
+                    </div>
+                    <div class="right-button-container">
+                        <span class="material-symbols-outlined right-button" id="scene2-button"></span>
                     </div>
                 </div>
             </div>

@@ -87,8 +87,7 @@ p {
 
 }
 #scene2-button {
-    background-color: white;
-    border-radius: 15px;
+    background-image: url("../images/arrow_icon_reverse.svg");
 }
 .right-button {
     margin: 0 auto;

@@ -12,7 +12,7 @@
 }
 
 #scene-2-left > .left-container {
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +34,9 @@
 
 #scene-2-right {
     flex-grow: 4;
-    background-color: #2f2f2f;
+    background: #485563; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #29323c, #2e353f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29323c, #2e353f);
     color: #ffffff;
     flex-basis: 0;
 }
@@ -59,7 +61,7 @@
 .info-content {
     flex-grow: 1;
     padding-left: 125px;
-    padding-top: 90px;
+    padding-top: 150px;
 }
 
 #scene-2-title-text {

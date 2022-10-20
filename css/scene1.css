@@ -1,5 +1,7 @@
 #scene-1 {
     display: flex;
+    position: absolute;
+    inset: 0;
 }
 
 #scene-1-left {
@@ -26,14 +28,6 @@
 
 .right-profile-container {
     flex-grow: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.right-button-container {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;

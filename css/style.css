@@ -82,34 +82,78 @@ p {
     height: 75px;
     width: 75px;
     position: fixed;
+    z-index: 110;
 }
-#title-button {
 
+#btn-to-right {
+    background-image: url("../images/right_arrow.svg");
+
+    animation-name: right-button-bounce;
 }
-#scene2-button {
-    background-image: url("../images/arrow_icon_reverse.svg");
+
+#btn-to-left {
+    background-image: url("../images/left_arrow.svg");
+
+    animation-name: left-button-bounce;
 }
-.right-button {
+
+.arrow_button {
     margin: 0 auto;
     width: 40px;
     height: 40px;
-    background-image: url("../images/arrow_icon.svg");
     background-size: cover;
 
     animation-delay: 1.3s;
     animation-duration: 2s;
     animation-timing-function: ease-in;
-    animation-name: title-button-bounce;
     animation-iteration-count: infinite;
-    position: relative
 }
 
-@keyframes title-button-bounce {
+.btn-reversed {
+    background-image: url("../images/right_arrow_reverse.svg");
+}
+
+
+.right-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 70px;
+    right: 0;
+    z-index: 100;
+}
+
+.left-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 70px;
+    left: 0;
+    z-index: 100;
+}
+
+@keyframes right-button-bounce {
     0% {
         transform: translate(0, 0);
     }
     50% {
         transform: translate(20px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes left-button-bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-20px, 0);
     }
     100% {
         transform: translate(0, 0);

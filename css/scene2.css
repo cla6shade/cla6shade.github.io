@@ -1,9 +1,12 @@
 @import url("./scene2-right.css");
 
 #scene-2 {
-    display: none;
+    display: flex;
     flex-basis: 0;
+    position: absolute;
+    inset: 0;
     left: 100vw;
+    top: 0;
 }
 
 #scene-2-left {
@@ -34,8 +37,6 @@
 
 #scene-2-right {
     flex-grow: 4;
-    background: #485563; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,  #29323c, #2e353f); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #29323c, #2e353f);
     color: #ffffff;
     flex-basis: 0;

@@ -87,13 +87,11 @@ p {
 
 #btn-to-right {
     background-image: url("../images/right_arrow.svg");
-
     animation-name: right-button-bounce;
 }
 
 #btn-to-left {
     background-image: url("../images/left_arrow.svg");
-
     animation-name: left-button-bounce;
 }
 
@@ -109,8 +107,12 @@ p {
     animation-iteration-count: infinite;
 }
 
-.btn-reversed {
-    background-image: url("../images/right_arrow_reverse.svg");
+.btn-right-reversed {
+    background-image: url("../images/right_arrow_reverse.svg") !important;
+}
+
+.btn-left-reversed {
+    background-image: url("../images/left_arrow_reverse.svg") !important;
 }
 
 

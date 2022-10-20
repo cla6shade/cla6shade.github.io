@@ -30,11 +30,13 @@ function bind_buttons() {
         current_scene = SCENES[scene_num];
         let to_element = document.getElementById(current_scene);
         transition(from_element, to_element, DIRECTION_LEFT);
+        // SCENE2로 넘어갈때 button 색 반전
+        button_reverse(BTN_RIGHT, current_scene === SCENE2);
     });
 
 
     let right = document.getElementById(BTN_RIGHT);
-    right.addEventListener('click', ()=>{
+    right.addEventListener('click', () => {
         let from_element = document.getElementById(current_scene);
         if (scene_num === SCENES.length - 1) {
             scene_num = 0;
@@ -44,6 +46,7 @@ function bind_buttons() {
         current_scene = SCENES[scene_num];
         let to_element = document.getElementById(current_scene);
         transition(from_element, to_element, DIRECTION_RIGHT);
+        button_reverse(BTN_RIGHT, current_scene === SCENE2);
     })
 }
 
@@ -53,7 +56,7 @@ function bind_buttons() {
  * @param {Element} t
  * @param {int} direction
  */
-function transition(f, t, direction){
+function transition(f, t, direction) {
     //right 1 left -1
     //this is right
     let to_x = direction * 100 + "vw";
@@ -75,3 +78,17 @@ function transition(f, t, direction){
     t.animate(animation, timings);
     f.animate(animation_2, timings);
 }
+
+function button_reverse(button, reverse = true) {
+    let btn = document.getElementById(button);
+    setTimeout(() => {
+        if (button === BTN_RIGHT) {
+            let tail = reverse ? " btn-right-reversed" : "";
+            btn.className = "arrow_button" + tail;
+        } else {
+            let tail = reverse ? " btn-left-reversed" : "";
+            btn.className = "arrow_button" + tail;
+        }
+    }, 300)
+}
+

@@ -37,7 +37,7 @@
 
 #scene-2-right {
     flex-grow: 4;
-    background: linear-gradient(to right, #29323c, #2e353f);
+    background: linear-gradient(to right, #29323c, #404954);
     color: #ffffff;
     flex-basis: 0;
 }
